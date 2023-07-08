@@ -1,1 +1,1 @@
-docker-compose run --rm app sh -c "python manage.py makemigrations && python manage.py test"
+docker-compose run --rm app sh -c "flake8 && python manage.py makemigrations && python manage.py test"
